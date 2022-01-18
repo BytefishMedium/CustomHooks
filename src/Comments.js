@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-function Users(){
+function Comments(){
   const [comments, setComments] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
@@ -39,4 +39,4 @@ function Users(){
   </div>
 }
 
-export default Users
+export default Comments

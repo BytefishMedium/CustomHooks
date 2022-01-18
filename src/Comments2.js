@@ -1,7 +1,6 @@
-import {useState} from 'react'
 import useAsync from './hooks/useAsync'
 
-function Users(){
+function Comments(){
   const baseURL = 'https://jsonplaceholder.typicode.com'
 
   const handleFetchComments = async () => {
@@ -36,4 +35,4 @@ function Users(){
   </div>
 }
 
-export default Users
+export default Comments
