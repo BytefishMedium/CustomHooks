@@ -75,11 +75,12 @@ function Articles () {
   if (!filteredArticles) return 'loading'
 
   return <div>
+    <h2> Articles </h2>
     <input onChange={event => setSearchString(event.target.value)}/>
     <ul>
-      {filteredArticles.map(article => {
+      {filteredArticles.map((article, index) => {
         return <li key={article.id}>
-          <h2>{article.title}</h2>
+          <h3>Article {index}: {article.title}</h3>
           <ul>
             {
               article.comments.map(comment => <li key={comment.id}>{comment.body}</li>)
