@@ -6,7 +6,7 @@ function Counter(){
   return (
     <div>
       <h2>Counter with custom hook</h2>
-      <p>Count value: {count} times</p>
+      <p>Count value: {count}</p>
       <button onClick={increment}>increase</button>
       <button onClick={decrement}>decrease</button>
       <button onClick={reset}>reset</button>
